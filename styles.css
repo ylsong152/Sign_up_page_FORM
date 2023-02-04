@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap');
+
+@font-face {
+    font-family: titleFont;
+    src: url(./fonts/titleFont.ttf);
+}  
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ebf5ee;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: titleFont;
+    font-size: 5vh;
+    color: rgb(204, 204, 16);
+    text-shadow: 3px 4px black;
+}
+
+p {
+    font-size: 22px;
+    padding: 1rem;
+}
+
+em {
+    color: #77a2bb;
+}
+
+em:hover {
+    color: rgb(204, 204, 16);
+    cursor: default;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 0 15vw;
+    background-color: rgb(40,48,68);
+    background: radial-gradient(circle, rgba(40,48,68,1) 80%, rgba(31,35,45,1) 96%, rgba(16,17,22,1) 100%);
+}
+
+
+/* LEFT SIDE */
+.left {
+    position: relative;
+    margin-right: 16px;
+}
+
+.title-name {
+    position:absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.background-image {
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* RIGHT SIDE */
+.right {
+    background-color: #283044;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dummy-text p {
+    margin-top: 0;
+    padding-top: 2rem;
+}
+
+form {
+    color: #ebf5ee;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    justify-content: flex-start;
+    border: none;
+    margin: 2rem auto 3.5rem;
+}
+
+label {
+    margin-bottom: 3px;
+}
+
+.input input {
+    max-width: 15vw;
+    display: block;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #ebf5ee;
+    min-width: 200px;
+}
+
+input:focus {
+    box-shadow: 0 0 15px rgb(204, 204, 16);
+  }
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    font-size: 14px;
+    position: relative;
+}
+
+.submit-btn {
+    margin-left: 1rem;
+    padding: 14px;
+    border-radius: 5px;
+    width: 12rem;
+    background-color: #283044;
+    border-color: #ebf5ee;
+    color: #ebf5ee;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.submit-btn:hover {
+    background-color: #ebf5ee;
+    color: #283044;
+    cursor: pointer;
+}
+
+.login p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.login a {
+    color: #77a2bb;
+}
+
+.login a:hover {
+    color: rgb(204, 204, 16);
+}
